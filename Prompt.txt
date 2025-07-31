@@ -1,37 +1,185 @@
-You are to act as an autonomous coding agent capable of full game implementation using Python and Pygame.
+You are to act as an autonomous coding agent capable of full game implementation, debugging, optimization, and automated testing using Python and Pygame.
 
-## TASK
-Create a 2D sandbox game with the following mechanics and features:
+## COMPLETE PROJECT SPECIFICATION
+
+### PRIMARY TASK
+Create a 2D physics sandbox game with scientifically optimized parameters through automated 10-iteration testing to achieve perfect stability and performance.
 
 ### GAME CONCEPT
-- The game occurs inside a **rotating hexagon box** that acts as the boundary of play.
-- There are **two objects**: a **Sword** and a **Shield**, rendered as simple shapes (e.g., rectangles or icons).
-- Both objects are initialized with the same **HP** (e.g., 10).
-- The objects **move and bounce around** the rotating hexagon boundary.
+- The game occurs inside a **rotating hexagon boundary** that acts as the play area
+- There are **two objects**: a **Sword** and a **Shield** with realistic physics
+- Both objects start with the same **HP** (initial: 10)
+- Objects **move and bounce** with realistic collision physics inside the rotating hexagon
+- Implement **mass-based collision system** with energy conservation
+- Include **anti-sticking measures** to prevent objects from getting stuck on edges
 
-### GAME RULES
-- When **an object collides with the edge of the hexagon**, it:
-    - Gains **+1 HP**
-    - Grows **larger in size** (proportional to current HP)
-- When **the Sword and Shield collide with each other**:
-    - Each loses HP equal to the **other's current HP**
-    - For example, if Sword has 5 HP and Shield has 3, then after collision:
-        - Sword HP = 5 - 3 = 2
-        - Shield HP = 3 - 5 = 0 → Shield is destroyed
-- If **either object's HP falls to 0 or below**, the **round ends** and game resets.
+### CORE GAME RULES
+- When **an object collides with hexagon boundary**:
+    - Gains **+1 HP** (or optimized amount)
+    - Grows **larger in size** proportional to current HP
+    - Reflects with realistic physics (velocity, angle, energy loss)
+- When **Sword and Shield collide with each other**:
+    - Each loses HP based on **damage coefficient** and impact velocity
+    - Apply **mass-based collision response** with proper impulse calculation
+    - Objects separate to prevent overlap
+    - Visual impact effects (glow, rotation)
+- **Round ends** when either object's HP falls to 0 or below
+- **Auto-reset** mechanism for continuous gameplay
 
-### UI CONTROLS
-- Start screen has a **"Start Game"** button
-- During the game, the button is replaced with a **"Stop Game"** button that halts the simulation and returns to the start screen
+### ADVANCED PHYSICS REQUIREMENTS
+- **Velocity capping** to prevent runaway speeds
+- **Energy loss factor** on collisions for stability
+- **Restitution coefficient** for realistic bouncing
+- **Gravity simulation** with adjustable strength
+- **Smooth size interpolation** for visual appeal
+- **Rotation mechanics** based on collision impact
+- **Boundary safety margins** to prevent clipping
 
-### IMPLEMENTATION REQUIREMENTS
-- Use **Python + Pygame**
-- Make the code self-contained (no external assets)
-- Organize into functions or classes where possible
-- The hexagon should **visually rotate** but still act as a bounding box
+### OPTIMIZATION SPECIFICATIONS
+**Target: Achieve perfect 1.000 stability score through automated testing**
 
-### NOTES
-- Visual quality is secondary. Prioritize logical correctness and collision mechanics.
-- You can represent the rotating hexagon as a static image or rotate mathematically using transformation.
-- Use simple shape drawing for Sword and Shield.
-- Ensure that the game loop handles collision physics and UI transitions.
+#### Required Optimization Parameters:
+- **Damage Coefficient**: 0.850 (scientifically validated)
+- **Growth Factor**: 1.700 (optimal scaling)
+- **Gravity Strength**: 0.060 (balanced physics)
+- **Energy Loss Factor**: 0.860 (stable energy conservation)
+- **Restitution**: 0.720 (ideal bounce behavior)
+- **Boundary Safety Margin**: 6 (prevents edge clipping)
+
+#### Performance Requirements:
+- **Consistent 60+ FPS** performance
+- **Zero physics issues** (no stuck objects, velocity problems)
+- **Perfect stability score**: 1.000 across all test iterations
+- **Automatic issue detection** and resolution
+
+### AUTOMATED TESTING SYSTEM
+**Implement a 10-iteration optimization loop:**
+
+1. **Iteration Testing**: Run 10 automated test cycles (5 seconds each)
+2. **Parameter Progression**: Incrementally adjust physics parameters
+3. **Issue Detection**: Monitor for stuck objects, excessive velocities, physics anomalies
+4. **Performance Tracking**: Measure FPS, collision rates, stability metrics
+5. **Automated Fixes**: Apply anti-sticking measures, velocity nudges, parameter adjustments
+6. **Report Generation**: Create comprehensive JSON reports with metrics
+7. **Best Configuration Selection**: Choose optimal parameters from all iterations
+
+### ENHANCED VISUAL FEATURES
+- **Trail Effects**: Particle trails following object movement
+- **Impact Glow**: Visual feedback on collisions with fade effects
+- **Pulsing Hexagon**: Dynamic boundary with rotation and pulse animations
+- **Real-time Statistics**: FPS counter, collision rate, performance metrics
+- **Enhanced Object Rendering**: 
+  - Sword: Rectangle with blade highlights and handle details
+  - Shield: Circle with border, inner patterns, rotation indicators
+
+### COMPREHENSIVE UI SYSTEM
+#### Start Screen:
+- **Professional title**: "FINAL OPTIMIZED GAME"
+- **Optimization badges**: Display perfect stability, FPS stats
+- **Feature highlights**: List key optimizations achieved
+- **Start button**: Large, prominent game launch button
+
+#### In-Game UI:
+- **Real-time Parameter Sliders**: 
+  - Damage Coefficient (0.5 - 1.5)
+  - Growth Factor (1.0 - 3.0)
+  - Gravity Strength (0.01 - 0.2)
+  - Energy Loss Factor (0.7 - 1.0)
+  - Restitution (0.5 - 1.0)
+- **Performance Dashboard**:
+  - Current FPS
+  - Collision rate per second
+  - Object HP values
+  - Game session time
+  - Total collision count
+- **Control Buttons**: Menu/Stop button, Reset key (R)
+
+### DEVELOPMENT TOOLS REQUIRED
+Create comprehensive debugging and optimization toolkit:
+
+1. **debug_monitor.py**: Real-time game analysis with auto-optimization
+2. **automated_optimizer.py**: Headless 10-iteration testing system
+3. **iterative_optimizer.py**: Interactive optimization with GUI
+4. **game_optimizer.py**: Parameter optimization engine
+5. **final_optimizer.py**: Comprehensive analysis and reporting
+
+### TECHNICAL SPECIFICATIONS
+#### Core Implementation:
+- **Python 3.11+** with **Pygame 2.6+**
+- **Object-oriented design** with proper class hierarchy
+- **Modular architecture** for easy testing and optimization
+- **Performance optimization** for consistent 60+ FPS
+- **Memory management** for long-running sessions
+
+#### Physics Engine:
+- **Accurate collision detection** using point-in-polygon for hexagon
+- **Vector mathematics** for realistic reflection calculations
+- **Mass-based dynamics** with proper impulse responses
+- **Energy conservation** with configurable loss factors
+- **Anti-sticking algorithms** with detection and resolution
+
+#### File Structure Requirements:
+```
+├── game.py                          # Original implementation
+├── improved_game.py                 # Enhanced version with advanced physics  
+├── final_optimized_game.py         # Final version with perfect parameters ⭐
+├── automated_optimizer.py          # Headless 10-iteration optimizer
+├── iterative_optimizer.py          # Interactive optimization manager
+├── debug_monitor.py                # Real-time analysis and auto-optimization
+├── game_optimizer.py               # Parameter optimization engine
+├── final_optimizer.py              # Comprehensive analysis tool
+├── requirements.txt                # Dependencies (pygame, pyinstaller, pillow)
+├── README.md                       # Professional documentation
+└── reports/
+    ├── 10_iteration_optimization_report.json
+    ├── FINAL_OPTIMIZATION_SUMMARY.md
+    └── optimization_metrics.json
+```
+
+### EXPECTED OPTIMIZATION RESULTS
+**Target metrics to achieve:**
+
+```
+Iteration 1: FPS=60.47, Stability=1.000, Issues=0 ⭐ BEST
+Iteration 2: FPS=60.43, Stability=1.000, Issues=0  
+Iteration 3: FPS=60.30, Stability=1.000, Issues=0
+[... continuing through iteration 10]
+Average FPS: 60.28
+Total Issues Found: 0
+Stability Score: 1.000 (Perfect)
+```
+
+### DEPLOYMENT REQUIREMENTS
+- **Standalone Executable**: Package with PyInstaller for distribution
+- **Professional Documentation**: Complete README with features and installation
+- **Version Control**: Git repository with proper branching strategy
+- **GitHub Integration**: Actions workflow for automated testing
+- **Distribution Package**: Zip file with executable and documentation
+
+### SUCCESS CRITERIA
+✅ **Perfect Physics Stability**: 1.000 stability score across all 10 iterations  
+✅ **Optimal Performance**: Consistent 60+ FPS maintained  
+✅ **Zero Issues**: No stuck objects, velocity problems, or physics anomalies  
+✅ **Scientific Validation**: Data-driven parameter optimization  
+✅ **Production Ready**: Standalone executable with professional presentation  
+✅ **Comprehensive Documentation**: Full optimization reports and analysis  
+
+### IMPLEMENTATION PHASES
+1. **Phase 1**: Create basic game with core mechanics
+2. **Phase 2**: Implement enhanced physics and collision detection
+3. **Phase 3**: Add visual effects and UI improvements
+4. **Phase 4**: Create optimization and debugging tools
+5. **Phase 5**: Run 10-iteration automated optimization
+6. **Phase 6**: Apply best parameters and create final version
+7. **Phase 7**: Package as standalone executable
+8. **Phase 8**: Create documentation and repository
+
+### CRITICAL NOTES
+- **Always monitor terminal output** before proceeding with next actions
+- **Validate each iteration** of optimization for issues and improvements
+- **Apply progressive fixes** for any detected physics problems
+- **Maintain scientific rigor** in parameter optimization
+- **Document all findings** in comprehensive reports
+- **Ensure reproducibility** through detailed specifications
+
+This prompt will generate a complete, scientifically optimized 2D physics sandbox game with perfect stability, professional presentation, and production-ready deployment package.
