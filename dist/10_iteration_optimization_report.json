@@ -1,0 +1,157 @@
+{
+  "timestamp": "2025-08-01T00:33:28.885723",
+  "total_iterations": 10,
+  "results": [
+    {
+      "iteration": 1,
+      "fps": 60.47075133524651,
+      "duration": 5.010686874389648,
+      "sword_avg_velocity": 1.035090552336704,
+      "shield_avg_velocity": 0.6806717934895139,
+      "sword_final_hp": 15.963708765903975,
+      "shield_final_hp": 12.663708765903976,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 2,
+      "fps": 60.426205851633405,
+      "duration": 5.014380693435669,
+      "sword_avg_velocity": 1.2999233964245307,
+      "shield_avg_velocity": 1.1974556343522018,
+      "sword_final_hp": 14.382806977266947,
+      "shield_final_hp": 15.582806977266946,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 3,
+      "fps": 60.299964520186336,
+      "duration": 5.0082948207855225,
+      "sword_avg_velocity": 1.2436532895996386,
+      "shield_avg_velocity": 0.9110906820419447,
+      "sword_final_hp": 11.998209202650186,
+      "shield_final_hp": 18.498209202650187,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 4,
+      "fps": 60.18341273662483,
+      "duration": 5.001378059387207,
+      "sword_avg_velocity": 0.6026789075114968,
+      "shield_avg_velocity": 2.045861201531982,
+      "sword_final_hp": 5.195965013095906,
+      "shield_final_hp": 16.395965013095907,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 5,
+      "fps": 60.31669881116544,
+      "duration": 5.0069053173065186,
+      "sword_avg_velocity": 2.59047387851292,
+      "shield_avg_velocity": 1.1694446574345045,
+      "sword_final_hp": 15.878841416788589,
+      "shield_final_hp": 14.378841416788589,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 6,
+      "fps": 60.246859962272225,
+      "duration": 5.012709379196167,
+      "sword_avg_velocity": 2.2255458004672204,
+      "shield_avg_velocity": 2.0373027562836867,
+      "sword_final_hp": 19.936054688842294,
+      "shield_final_hp": 18.336054688842292,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 7,
+      "fps": 60.354758796297176,
+      "duration": 5.003747940063477,
+      "sword_avg_velocity": 1.1118464789181952,
+      "shield_avg_velocity": 2.1058937187203477,
+      "sword_final_hp": 16.250158077268573,
+      "shield_final_hp": 24.75015807726857,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 8,
+      "fps": 60.07814502826108,
+      "duration": 5.010141372680664,
+      "sword_avg_velocity": 2.245256742184049,
+      "shield_avg_velocity": 3.1640128278815944,
+      "sword_final_hp": 14.788421073179554,
+      "shield_final_hp": 14.788421073179554,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 9,
+      "fps": 60.15328060938999,
+      "duration": 5.003883361816406,
+      "sword_avg_velocity": 2.8836930463001234,
+      "shield_avg_velocity": 3.7714673118977506,
+      "sword_final_hp": 6.2807301588073985,
+      "shield_final_hp": 11.980730158807397,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    {
+      "iteration": 10,
+      "fps": 60.26230902378594,
+      "duration": 5.01142430305481,
+      "sword_avg_velocity": 3.4965057099477943,
+      "shield_avg_velocity": 1.3260478054213998,
+      "sword_final_hp": 12.334366229368516,
+      "shield_final_hp": 8.334366229368516,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    }
+  ],
+  "fixes_applied": [],
+  "summary": {
+    "best_iteration": {
+      "iteration": 1,
+      "fps": 60.47075133524651,
+      "duration": 5.010686874389648,
+      "sword_avg_velocity": 1.035090552336704,
+      "shield_avg_velocity": 0.6806717934895139,
+      "sword_final_hp": 15.963708765903975,
+      "shield_final_hp": 12.663708765903976,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    "worst_iteration": {
+      "iteration": 1,
+      "fps": 60.47075133524651,
+      "duration": 5.010686874389648,
+      "sword_avg_velocity": 1.035090552336704,
+      "shield_avg_velocity": 0.6806717934895139,
+      "sword_final_hp": 15.963708765903975,
+      "shield_final_hp": 12.663708765903976,
+      "issues_detected": 0,
+      "stability_score": 1.0,
+      "issues_list": []
+    },
+    "avg_fps": 60.2792386674863,
+    "avg_stability": 1.0,
+    "total_issues": 0,
+    "improvement_trend": 0.0
+  }
+}

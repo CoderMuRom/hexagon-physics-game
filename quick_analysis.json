@@ -1,0 +1,15 @@
+{
+  "analysis": {
+    "fps": 0,
+    "collision_rate": 0,
+    "boundary_hit_rate": 0,
+    "average_sword_velocity": 3.2416335009125485,
+    "average_shield_velocity": 2.646963241198423,
+    "velocity_stability": 0.999521825147982
+  },
+  "anomalies": [],
+  "total_frames": 21,
+  "total_collisions": 1,
+  "total_boundary_hits": 0,
+  "session_duration": 0.0
+}

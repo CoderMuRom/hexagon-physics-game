@@ -1,0 +1,19 @@
+{
+  "analysis": {
+    "fps": 34.375176579439035,
+    "collision_rate": 0.04210924039947615,
+    "boundary_hit_rate": 5.109254501803107,
+    "average_sword_velocity": 1.4790593200813726,
+    "average_shield_velocity": 3.7558745168918337,
+    "velocity_stability": 0.9879945478192513
+  },
+  "anomalies": [
+    "Excessive damage detected: 75",
+    "Excessive damage detected: 92",
+    "Excessive damage detected: 96"
+  ],
+  "total_frames": 2449,
+  "total_collisions": 3,
+  "total_boundary_hits": 364,
+  "session_duration": 71.24436330795288
+}

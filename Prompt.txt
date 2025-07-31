@@ -1,0 +1,37 @@
+You are to act as an autonomous coding agent capable of full game implementation using Python and Pygame.
+
+## TASK
+Create a 2D sandbox game with the following mechanics and features:
+
+### GAME CONCEPT
+- The game occurs inside a **rotating hexagon box** that acts as the boundary of play.
+- There are **two objects**: a **Sword** and a **Shield**, rendered as simple shapes (e.g., rectangles or icons).
+- Both objects are initialized with the same **HP** (e.g., 10).
+- The objects **move and bounce around** the rotating hexagon boundary.
+
+### GAME RULES
+- When **an object collides with the edge of the hexagon**, it:
+    - Gains **+1 HP**
+    - Grows **larger in size** (proportional to current HP)
+- When **the Sword and Shield collide with each other**:
+    - Each loses HP equal to the **other's current HP**
+    - For example, if Sword has 5 HP and Shield has 3, then after collision:
+        - Sword HP = 5 - 3 = 2
+        - Shield HP = 3 - 5 = 0 → Shield is destroyed
+- If **either object's HP falls to 0 or below**, the **round ends** and game resets.
+
+### UI CONTROLS
+- Start screen has a **"Start Game"** button
+- During the game, the button is replaced with a **"Stop Game"** button that halts the simulation and returns to the start screen
+
+### IMPLEMENTATION REQUIREMENTS
+- Use **Python + Pygame**
+- Make the code self-contained (no external assets)
+- Organize into functions or classes where possible
+- The hexagon should **visually rotate** but still act as a bounding box
+
+### NOTES
+- Visual quality is secondary. Prioritize logical correctness and collision mechanics.
+- You can represent the rotating hexagon as a static image or rotate mathematically using transformation.
+- Use simple shape drawing for Sword and Shield.
+- Ensure that the game loop handles collision physics and UI transitions.
